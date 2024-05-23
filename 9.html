@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;   /* This must be done before using any flex property*/
+            flex-direction: row;  /* others are row,column,column-reverse */
+             justify-content:space-evenly; /*others are start, end, space-around,space-between, center */
+            align-items:center; /*center, baseline, start, end, stretch*/
+            /* align-content: center; */
+            flex-wrap:nowrap; /* wrap, nowrap and wrap-reverse*/
+
+            border: 1px solid black;
+            width: 700px;
+            height: 600px;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(71, 63, 63);
+            /*As value of flex-shrink is more, item/child shrinks more to accomodate others, happens only in nowrap state*/
+            /*As value of flex-grow is more, item expands more to cover whitespaces*/
+            /*order must be given to all items and they are displayed in ascending value of order*/
+
+        }
+        #one{
+            background-color: red;
+            /* flex-shrink: 3; */
+            order: 3;
+            align-self: start;
+        }
+        #two{
+            background-color: blue;
+            /* flex-shrink: 5; */
+            flex-grow: 8;
+            order: 1;
+            align-self: center;
+        }
+        #three{
+            background-color: rgb(40, 231, 40);
+            flex-grow: 5;
+            order: 2;
+            align-self: end; 
+        }
+        img{
+            width: 50%;
+            aspect-ratio: 5/2;
+            object-fit:contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="one">RED</div>
+        <div class="child" id="two">BLUE</div>
+        <div class="child" id="three">GREEN</div>
+        <!-- <div class="child" id="one">RED</div>
+        <div class="child" id="two">BLUE</div>
+        <div class="child" id="three">GREEN</div>
+        <div class="child" id="one">RED</div>
+        <div class="child" id="two">BLUE</div>
+        <div class="child" id="three">GREEN</div> -->
+    </div>
+    <img src="https://i.pinimg.com/originals/52/4a/60/524a60b5bc94f670dbeb5ee40a712681.png">
+    <img src="https://i.pinimg.com/originals/88/e6/21/88e621db18f17caab9f581d3b95bbb09.png">
+</body>
+</html>
+<!-- flex: 
+        parent properties- dipslay:flex, flex-direction,flexwrap, flex-flow, justify-content, align-items, align-content
+        child properties- align-self, order, shrink, grow   -->

@@ -1,0 +1,15 @@
+All HTML documents must start with a <!DOCTYPE html> declaration.
+
+It is an instruction to the wb browser about what version of the HTML page is written.
+
+<head>: container for metadata aind is placed btween <html> and <body> tags.
+Metadata is not displayed. It typically define the document titl, charecter st, styls, scripts and other metadata information.
+
+<body>: contains all elements of an HTML document such as headings, paras, images, hyperlinks, tabls, lists tc.
+All information present in the website is written in the BODY tag only
+
+STRUCTURE OF NORMAL HTML ELEMENT: <tag> content </tag>
+                    VOID ELEMENT: <tag>
+
+ATTRIBUTES IN HTML:
+href

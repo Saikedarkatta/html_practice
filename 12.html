@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: none;
+            text-align: center;
+            color: white;
+            animation-name: two;
+            animation-duration: 2s;
+            animation-iteration-count: 3;/*if you give infinite animation runs continuously*/
+            animation-direction: alternate;
+            animation-fill-mode: forwards ;
+            animation-timing-function: 0.7 ease-out;/*0.7 reprsents value to slow down to when it eases i.e. slows*/
+            /* animation-delay: 3s; */
+            animation-play-state: running;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes two{
+            0%{/*from can be used instead of 0% but breakpoints cant be added*/
+                border-radius: 50%;
+                transform: scale(1.3);
+            }
+            20%{
+                transform: translateY(125px);
+                background-color: hwb(318 17% 11%);
+            }
+            60%{
+                transform: translateX(125px);
+            }            
+            100%{/*to can be used instead of 100% but breakpoints cant be added*/
+                background-color: #ff1100de;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+    <!--CSS Animation properties: @keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction(normal,reverse,alternate,alternate-reverse), animation-timing-fn((ease,linear,ease-in,ease-out,ease-in-out), animation-fill-mode(none, forwards, backards, both), animation-play-state(running, paused) -->
+    <!-- Keyframes Rules: 
+    1. When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+    2. To get an animation to work, you must bind it to an element. -->
+    
+</head>
+<body>
+    <div class="box">
+        HELLO
+    </div>
+</body>
+</html>

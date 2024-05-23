@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 100px;
+            border: 1px solid rgb(189, 28, 28);
+            background-color: rgb(154, 228, 247);
+            overflow: scroll;
+            /* auto can also be used but it gives scroll bar only if necessary  */
+        }
+        .sint{
+            position: fixed;
+            top:0px;
+            z-index:-10;
+        }
+        h1{
+            position: absolute;
+            z-index:0;
+            padding: 1%;
+        }
+        p{
+            position: absolute;
+            z-index: 10;
+            padding: 1%;
+            top: 50px;
+        }
+        .mel{
+            position: absolute;
+            top: 40px;
+            z-index: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://i.pinimg.com/474x/41/3f/0f/413f0fbf04f03406711be8aaf595503c.jpg" style="float: left;width: 15%;"> -->
+    <!-- overflow -->
+    <!-- <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est temporibus voluptatum laborum non dolore nam aperiam, quod quibusdam, dolor nulla distinctio iure ducimus nemo facilis possimus tempora quo, saepe officia.</p> -->
+    <div>
+        <h1> The Dragon Sin Meliodas </h1>
+        <p>Seven Deadly Sins</p>
+        <img src="https://i.pinimg.com/originals/52/4a/60/524a60b5bc94f670dbeb5ee40a712681.png" width="5%" class="sint">
+        <img src="https://i.pinimg.com/originals/88/e6/21/88e621db18f17caab9f581d3b95bbb09.png" width="10%" class="mel">
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2048px-Amazon_icon.svg.png">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/ede99f0e80.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            border: 1px solid blue; 
+            font-family: sans-serif;
+
+        }
+        .main{
+            display: flex;
+        }
+        .ima{
+            width: 100%;
+        }
+        .first{
+            width: 50%;
+        }
+        .two{
+            width: 50%
+
+        }
+        .formy{
+            display: flex;
+            flex-direction: column ;
+            width:70% ;
+            box-shadow: 1px 2px 1px grey;
+            border: 0.5px solid grey; 
+            margin-top: 2%;
+            padding: 3%;
+        }
+        label{
+            color: #0c4676;
+            font-size: 20px;
+            margin-top: 2%;
+            margin-bottom: 0.5%;
+        }
+        input[type="text"],[type="email"],[type="password"]{
+            border: none;
+            padding: 2%;
+            box-shadow: 2px 2px 2px grey;            
+            border-radius: 30px; 
+        }
+        input[type="checkbox"]{
+            accent-color: #0c4676;
+        }
+        .check{
+            padding: 1%;
+            /* display: flex;
+            justify-content: space-evenly; */
+        }
+        .btn{
+            background-color: #0c4676;
+            color: white;
+            border: none;
+            padding: 2%;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: #0c4676;
+            border: 1px solid #0c4676;
+            /* transform: scaleY(1.2) ; */
+            transition: 0.1 ease ;
+            margin-bottom: 2%;
+        }
+        .last{
+            margin-top: 2%;
+        }
+        h6{
+            color: black;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+        a{
+            text-decoration: none;
+            color: 
+        }
+        .head{
+            color:#0a235d;
+            text-align: center;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="first">
+            <img src="https://cdn.dribbble.com/users/277921/screenshots/4223608/gw-dribbble.gif" alt="signup" class="ima">
+
+        </div>
+        <div class="two">
+            <form class="formy">
+                <h1 class="head">SignUp</h1>
+                <label><i class="fa-solid fa-user"></i>Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label><i class="fa-solid fa-envelope"></i>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+                <label><i class="fa-solid fa-phone"></i>Phone Number</label>
+                <input type="text" placeholder="Enter Phone Number" required>
+                <label><i class="fa-solid fa-lock"></i>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <label><i class="fa-solid fa-lock"></i>Confirm Password</label>
+                <input type="password" placeholder="Comfirm Password" required>
+                
+                <div class="check"><input type="checkbox">&nbsp;&nbsp;<label> I accept the terms and conditions</label></div>
+                <button class="btn">Submit</button><br><hr>
+                <div>
+                <h6>Already have an account, <a href="#">Login</a></h6>
+                <h6><a href="#">Forgot Password</a></h6></div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media devicetype and (property responsive rbreak points){
+            tag{
+                proprty to change
+            }
+        } */
+        @media screen and (max-width:576px){
+            .one{
+                color: green;
+                font-size:100px;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:768px){
+            .one{
+                color: blue;
+                font-size:10px;
+            }
+        }
+        @media all and (min-width:768px) and (max-width:992px){
+            .one{
+                background-color: yellow;
+                color: red;
+                font-size:40px;
+            }
+        }
+        @media all and (min-width:992px) and (max-width:1200px){
+            .one{
+                background-color: blueviolet;
+                color: white;
+                font-size:80px;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .one{
+                background-color: orangered;
+                font-size: 100px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="one">TUESDAY</h1>
+</body>
+</html>
